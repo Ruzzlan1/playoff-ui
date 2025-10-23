@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avrora Qrup IV Futbol Çempionatı - Turnir Bracket</title>
+  <link rel="stylesheet" href="modern.css">
+</head>
+<body>
+  <div class="tournament-bracket">
+    <div class="header">
+        <h1>AVRORA QRUP</h1>
+        <h2>IV FUTBOL ÇEMPIONATI</h2>
+        <div class="tournament-info">
+          <span class="tournament-date">2025</span>
+          <button id="showResultsBtn" class="show-results-btn">Nəticələri Göstər</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="bracket left-bracket">
+            <div class="round round-1">
+                <div class="match-group group-a">
+                    <div class="team-pair">
+                        <div class="team">17 / 18</div>
+                        <div class="team">15 / 16</div>
+                    </div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="result-box"></div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="r16-match">
+                        <div class="team-seed">1</div>
+                        <div class="team-seed">2</div>
+                    </div>
+                </div>
+                <div class="match-group group-b">
+                    <div class="team-pair">
+                        <div class="team">23 / 24</div>
+                        <div class="team">9 / 10</div>
+                    </div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="result-box"></div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="r16-match">
+                        <div class="team-seed">7</div>
+                        <div class="team-seed">8</div>
+                    </div>
+                </div>
+                <div class="match-group group-c">
+                    <div class="team-pair">
+                        <div class="team">21 / 22</div>
+                        <div class="team">11 / 12</div>
+                    </div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="result-box"></div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="r16-match">
+                        <div class="team-seed">5</div>
+                        <div class="team-seed">6</div>
+                    </div>
+                </div>
+                <div class="match-group group-d">
+                    <div class="team-pair">
+                        <div class="team">19 / 20</div>
+                        <div class="team">13 / 14</div>
+                    </div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="result-box"></div>
+                    <div class="connector-h connector-r1"></div>
+                    <div class="r16-match">
+                        <div class="team-seed">3</div>
+                        <div class="team-seed">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="round round-r16-qf">
+                <div class="connector-v r16-v-a">R16</div>
+                <div class="connector-h qf-h-a"></div>
+                <div class="connector-v qf-v-a">QF</div>
+                <div class="connector-v r16-v-b">R16</div>
+
+                <div class="connector-v r16-v-c">R16</div>
+                <div class="connector-h qf-h-b"></div>
+                <div class="connector-v qf-v-b">QF</div>
+                <div class="connector-v r16-v-d">R16</div>
+            </div>
+            
+            <div class="round round-sf-connector">
+                <div class="connector-h sf-h"></div>
+                <div class="connector-v sf-v">SF</div>
+            </div>
+        </div>
+
+        <div class="trophy-container">
+            <div class="trophy-placeholder">🏆</div>
+        </div>
+
+        <div class="bracket right-bracket">
+          <div class="round round-1">
+            <div class="match-group group-a">
+                <div class="r16-match">
+                    <div class="team-seed">1</div>
+                    <div class="team-seed">2</div>
+                </div>
+                <div class="connector-h connector-r1"></div>
+                <div class="result-box"></div>
+                <div class="connector-h connector-r1"></div>
+                <div class="team-pair">
+                    <div class="team">18 / 17</div>
+                    <div class="team">16 / 15</div>
+                </div>
+            </div>
+            <div class="match-group group-b">
+                <div class="r16-match">
+                    <div class="team-seed">8</div>
+                    <div class="team-seed">7</div>
+                </div>
+                <div class="connector-h connector-r1"></div>
+                <div class="result-box"></div>
+                <div class="connector-h connector-r1"></div>
+                <div class="team-pair">
+                    <div class="team">24 / 23</div>
+                    <div class="team">10 / 9</div>
+                </div>
+            </div>
+            <div class="match-group group-c">
+                <div class="r16-match">
+                    <div class="team-seed">6</div>
+                    <div class="team-seed">5</div>
+                </div>
+                <div class="connector-h connector-r1"></div>
+                <div class="result-box"></div>
+                <div class="connector-h connector-r1"></div>
+                <div class="team-pair">
+                    <div class="team">22 / 21</div>
+                    <div class="team">12 / 11</div>
+                </div>
+            </div>
+            <div class="match-group group-d">
+                <div class="r16-match">
+                    <div class="team-seed">4</div>
+                    <div class="team-seed">3</div>
+                </div>
+                <div class="connector-h connector-r1"></div>
+                <div class="result-box"></div>
+                <div class="connector-h connector-r1"></div>
+                <div class="team-pair">
+                    <div class="team">20 / 19</div>
+                    <div class="team">14 / 13</div>
+                </div>
+            </div>
+        </div>
+            <div class="round round-sf-connector">
+                <div class="connector-h sf-h"></div>
+                <div class="connector-v sf-v">SF</div>
+            </div>
+
+            <div class="round round-r16-qf">
+                <div class="connector-v r16-v-a">R16</div>
+                <div class="connector-h qf-h-a"></div>
+                <div class="connector-v qf-v-a">QF</div>
+                <div class="connector-v r16-v-b">R16</div>
+
+                <div class="connector-v r16-v-c">R16</div>
+                <div class="connector-h qf-h-b"></div>
+                <div class="connector-v qf-v-b">QF</div>
+                <div class="connector-v r16-v-d">R16</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Results Popup Modal -->
+<div id="resultsModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Turnir Nəticələri</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Team data from tournament table
+const teamData = {
+    1: "Logistika",
+    2: "Old City Ganja", 
+    3: "SPL",
+    4: "Tamstore Satış",
+    5: "Maliyyə M. UTD",
+    6: "Tamstore Ofis",
+    7: "Bizon Enerji",
+    8: "Tamstore Tornado",
+    9: "Göyçay",
+    10: "Dev Ops",
+    11: "Elit İçkilər",
+    12: "Nəqliyyat 2",
+    13: "İdxal və Ticari mallar",
+    14: "Süd Team",
+    15: "Qarabağ Bərdə",
+    16: "İstehsalçı",
+    17: "Şahdağ Quba",
+    18: "Təmir-Tikinti",
+    19: "Fabrist",
+    20: "Satışın İnkişafı",
+    21: "Təhlükəsizlik",
+    22: "OVEN",
+    23: "İdxal Region",
+    24: "Mərkəz Satış Anbarı"
+};
+
+// Store tournament results
+let tournamentResults = {
+    round1: [],
+    round2: [],
+    round3: []
+};
+
+// Interactive Tournament Bracket Features
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers for team pairs
+    const teamPairs = document.querySelectorAll('.team-pair');
+    teamPairs.forEach(pair => {
+        pair.addEventListener('click', function() {
+            // Remove active class from all pairs
+            teamPairs.forEach(p => p.classList.remove('active'));
+            // Add active class to clicked pair
+            this.classList.add('active');
+            
+            // Add visual feedback
+            this.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+        });
+    });
+
+    // Add hover effects for R16 matches
+    const r16Matches = document.querySelectorAll('.r16-match');
+    r16Matches.forEach(match => {
+        match.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1) rotate(2deg)';
+        });
+        
+        match.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) rotate(0deg)';
+        });
+    });
+
+    // Add tournament status animation
+    const statusElement = document.querySelector('.tournament-status');
+    if (statusElement) {
+        setInterval(() => {
+            statusElement.style.opacity = '0.7';
+            setTimeout(() => {
+                statusElement.style.opacity = '1';
+            }, 500);
+        }, 3000);
+    }
+
+    // Add smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    // Add loading animation
+    const matchGroups = document.querySelectorAll('.match-group');
+    matchGroups.forEach((group, index) => {
+        group.style.opacity = '0';
+        group.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+            group.style.transition = 'all 0.6s ease-out';
+            group.style.opacity = '1';
+            group.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+
+    // Add keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            const activePair = document.querySelector('.team-pair.active');
+            if (activePair) {
+                const allPairs = Array.from(teamPairs);
+                const currentIndex = allPairs.indexOf(activePair);
+                let nextIndex;
+                
+                if (e.key === 'ArrowLeft') {
+                    nextIndex = currentIndex > 0 ? currentIndex - 1 : allPairs.length - 1;
+                } else {
+                    nextIndex = currentIndex < allPairs.length - 1 ? currentIndex + 1 : 0;
+                }
+                
+                allPairs.forEach(p => p.classList.remove('active'));
+                allPairs[nextIndex].classList.add('active');
+                allPairs[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    });
+
+    // Add touch support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - next match
+                const activePair = document.querySelector('.team-pair.active');
+                if (activePair) {
+                    const allPairs = Array.from(teamPairs);
+                    const currentIndex = allPairs.indexOf(activePair);
+                    const nextIndex = currentIndex < allPairs.length - 1 ? currentIndex + 1 : 0;
+                    
+                    allPairs.forEach(p => p.classList.remove('active'));
+                    allPairs[nextIndex].classList.add('active');
+                }
+            } else {
+                // Swipe right - previous match
+                const activePair = document.querySelector('.team-pair.active');
+                if (activePair) {
+                    const allPairs = Array.from(teamPairs);
+                    const currentIndex = allPairs.indexOf(activePair);
+                    const nextIndex = currentIndex > 0 ? currentIndex - 1 : allPairs.length - 1;
+                    
+                    allPairs.forEach(p => p.classList.remove('active'));
+                    allPairs[nextIndex].classList.add('active');
+                }
+            }
+        }
+    }
+
+    // Make team numbers clickable and wire result-box autofill with mirroring
+    try {
+        // Pair left/right groups by index
+        const leftGroups = document.querySelectorAll('.left-bracket .round-1 .match-group');
+        const rightGroups = document.querySelectorAll('.right-bracket .round-1 .match-group');
+        leftGroups.forEach((group, index) => {
+            const pairId = `p${index}`;
+            group.dataset.pairId = pairId;
+            if (rightGroups[index]) rightGroups[index].dataset.pairId = pairId;
+        });
+
+        // Convert "A / B" text into clickable options
+        const teamCells = document.querySelectorAll('.team-pair .team');
+        teamCells.forEach(cell => {
+            const raw = (cell.textContent || '').trim();
+            if (!raw.includes('/')) return;
+            const parts = raw.split('/');
+            if (parts.length !== 2) return;
+            const a = parts[0].trim();
+            const b = parts[1].trim();
+            cell.dataset.a = a;
+            cell.dataset.b = b;
+            cell.innerHTML = `<span class="team-option" data-value="${a}">${a}</span> / <span class="team-option" data-value="${b}">${b}</span>`;
+        });
+
+        // Click handler: fill current result-box with chosen value, mirror with the opposite
+        document.querySelectorAll('.team-option').forEach(opt => {
+            opt.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const value = this.dataset.value;
+                const teamEl = this.closest('.team');
+                if (!teamEl) return;
+                const a = teamEl.dataset.a;
+                const b = teamEl.dataset.b;
+                const opposite = value === a ? b : a;
+
+                const matchGroup = this.closest('.match-group');
+                if (!matchGroup) return;
+                // Show chosen value directly inside the same "A / B" field
+                teamEl.textContent = value;
+
+                const pairId = matchGroup.dataset.pairId;
+                if (pairId) {
+                    const isLeft = !!matchGroup.closest('.left-bracket');
+                    const mirrorSelector = isLeft ? '.right-bracket' : '.left-bracket';
+                    const mirrorGroup = document.querySelector(`${mirrorSelector} .match-group[data-pair-id="${pairId}"]`);
+                    if (mirrorGroup) {
+                        // Find the mirrored team field with the same pair (order-insensitive)
+                        const mirrorTeams = mirrorGroup.querySelectorAll('.team-pair .team');
+                        mirrorTeams.forEach(mTeam => {
+                            const ma = mTeam.dataset.a;
+                            const mb = mTeam.dataset.b;
+                            if (!ma || !mb) return;
+                            const samePair = (ma === a && mb === b) || (ma === b && mb === a);
+                            if (samePair) {
+                                mTeam.textContent = opposite;
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        // Init and click handling for R16 seed boxes (1 / 2 style)
+        const r16Boxes = document.querySelectorAll('.round-1 .match-group .r16-match');
+        r16Boxes.forEach(box => {
+            const seeds = box.querySelectorAll('.team-seed');
+            if (seeds.length !== 2) return;
+            const a = seeds[0].textContent.trim();
+            const b = seeds[1].textContent.trim();
+            box.dataset.a = a;
+            box.dataset.b = b;
+
+            seeds.forEach(seedEl => {
+                seedEl.style.cursor = 'pointer';
+                seedEl.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const chosen = this.textContent.trim();
+                    const sa = box.dataset.a;
+                    const sb = box.dataset.b;
+                    const opposite = chosen === sa ? sb : sa;
+
+                    // Replace current box with single value
+                    box.innerHTML = `<div class="team-seed">${chosen}</div>`;
+
+                    // Mirror update on the other side with opposite value
+                    const matchGroup = box.closest('.match-group');
+                    if (!matchGroup) return;
+                    const pairId = matchGroup.dataset.pairId;
+                    if (!pairId) return;
+                    const isLeft = !!matchGroup.closest('.left-bracket');
+                    const mirrorSelector = isLeft ? '.right-bracket' : '.left-bracket';
+                    const mirrorGroup = document.querySelector(`${mirrorSelector} .match-group[data-pair-id="${pairId}"]`);
+                    if (mirrorGroup) {
+                        const mirrorBox = mirrorGroup.querySelector('.r16-match');
+                        if (mirrorBox) {
+                            mirrorBox.innerHTML = `<div class="team-seed">${opposite}</div>`;
+                        }
+                    }
+                });
+            });
+        });
+    } catch (err) {
+        console.warn('Failed to initialize clickable team options', err);
+    }
+
+    // Results tracking and popup functionality
+    function updateResults() {
+        tournamentResults.round1 = [];
+        tournamentResults.round2 = [];
+        tournamentResults.round3 = [];
+
+        // Track Round 1 results (team pairs) - Left Bracket
+        const leftGroups = document.querySelectorAll('.left-bracket .round-1 .match-group');
+        leftGroups.forEach((group, index) => {
+            const teamPair = group.querySelector('.team-pair');
+            const r16Match = group.querySelector('.r16-match');
+            
+            if (teamPair && r16Match) {
+                const teamText = teamPair.textContent.trim();
+                const r16Text = r16Match.textContent.trim();
+                
+                if (teamText && r16Text) {
+                    // Convert team numbers to team names
+                    const teamNumbers = teamText.split(/\s+/).filter(num => num && !isNaN(num));
+                    const teamNames = teamNumbers.map(num => teamData[num] || num).join(' vs ');
+                    
+                    tournamentResults.round1.push({
+                        match: index + 1,
+                        teams: teamNames,
+                        teamsNumbers: teamText,
+                        winner: r16Text,
+                        winnerName: teamData[r16Text] || r16Text
+                    });
+                }
+            }
+        });
+
+        // Track Round 1 results (team pairs) - Right Bracket
+        const rightGroups = document.querySelectorAll('.right-bracket .round-1 .match-group');
+        rightGroups.forEach((group, index) => {
+            const teamPair = group.querySelector('.team-pair');
+            const r16Match = group.querySelector('.r16-match');
+            
+            if (teamPair && r16Match) {
+                const teamText = teamPair.textContent.trim();
+                const r16Text = r16Match.textContent.trim();
+                
+                if (teamText && r16Text) {
+                    // Convert team numbers to team names
+                    const teamNumbers = teamText.split(/\s+/).filter(num => num && !isNaN(num));
+                    const teamNames = teamNumbers.map(num => teamData[num] || num).join(' vs ');
+                    
+                    tournamentResults.round1.push({
+                        match: index + 5, // Continue numbering from 5-8 for right bracket
+                        teams: teamNames,
+                        teamsNumbers: teamText,
+                        winner: r16Text,
+                        winnerName: teamData[r16Text] || r16Text
+                    });
+                }
+            }
+        });
+
+        // Track Round 2 results (QF)
+        const qfMatches = document.querySelectorAll('.round-2 .qf-match');
+        qfMatches.forEach((match, index) => {
+            const winner = match.textContent.trim();
+            if (winner) {
+                tournamentResults.round2.push({
+                    match: index + 1,
+                    winner: winner,
+                    winnerName: teamData[winner] || winner
+                });
+            }
+        });
+
+        // Track Round 3 results (SF)
+        const sfMatches = document.querySelectorAll('.round-3 .sf-match');
+        sfMatches.forEach((match, index) => {
+            const winner = match.textContent.trim();
+            if (winner) {
+                tournamentResults.round3.push({
+                    match: index + 1,
+                    winner: winner,
+                    winnerName: teamData[winner] || winner
+                });
+            }
+        });
+    }
+
+    function showResults() {
+        updateResults();
+        const modal = document.getElementById('resultsModal');
+        const content = document.getElementById('resultsContent');
+        
+        let html = '<div class="results-container">';
+        
+        // Round 1 Results
+        if (tournamentResults.round1.length > 0) {
+            html += '<div class="round-results">';
+            html += '<h3>Round 1 - R16</h3>';
+            html += '<table class="results-table">';
+            html += '<tr><th>Match</th><th>Teams</th><th>Winner</th></tr>';
+            tournamentResults.round1.forEach(match => {
+                html += `<tr>
+                    <td>${match.match}</td>
+                    <td>${match.teams}</td>
+                    <td>${match.winnerName} (${match.winner})</td>
+                </tr>`;
+            });
+            html += '</table></div>';
+        }
+
+        // Round 2 Results
+        if (tournamentResults.round2.length > 0) {
+            html += '<div class="round-results">';
+            html += '<h3>Round 2 - Quarter Finals</h3>';
+            html += '<table class="results-table">';
+            html += '<tr><th>Match</th><th>Winner</th></tr>';
+            tournamentResults.round2.forEach(match => {
+                html += `<tr>
+                    <td>${match.match}</td>
+                    <td>${match.winnerName} (${match.winner})</td>
+                </tr>`;
+            });
+            html += '</table></div>';
+        }
+
+        // Round 3 Results
+        if (tournamentResults.round3.length > 0) {
+            html += '<div class="round-results">';
+            html += '<h3>Round 3 - Semi Finals</h3>';
+            html += '<table class="results-table">';
+            html += '<tr><th>Match</th><th>Winner</th></tr>';
+            tournamentResults.round3.forEach(match => {
+                html += `<tr>
+                    <td>${match.match}</td>
+                    <td>${match.winnerName} (${match.winner})</td>
+                </tr>`;
+            });
+            html += '</table></div>';
+        }
+
+        html += '</div>';
+        content.innerHTML = html;
+        modal.style.display = 'block';
+    }
+
+    // Event listeners for results
+    document.getElementById('showResultsBtn').addEventListener('click', showResults);
+    
+    // Close modal
+    document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('resultsModal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('resultsModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avrora Qrup IV Futbol Çempionatı - Turnir Bracket</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h2>Champions League Knockout Bracket</h2>
+
+  <div class="bracket-wrapper">
+    <div class="bracket-side left">
+      <div class="round round-16">
+        <div class="match">Team A<br>vs<br>Team B</div>
+        <div class="match">Team C<br>vs<br>Team D</div>
+        <div class="match">Team E<br>vs<br>Team F</div>
+        <div class="match">Team G<br>vs<br>Team H</div>
+      </div>
+      <div class="round quarterfinal">
+        <div class="match">Winner 1<br>vs<br>Winner 2</div>
+        <div class="match">Winner 3<br>vs<br>Winner 4</div>
+      </div>
+      <div class="round semifinal">
+        <div class="match">Winner QF1<br>vs<br>Winner QF2</div>
+      </div>
+    </div>
+  
+    <div class="center">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/UEFA_Champions_League_trophy.png" alt="Trophy" class="trophy">
+    </div>
+  
+    <div class="bracket-side right">
+      <div class="round round-16">
+        <div class="match">Team I<br>vs<br>Team J</div>
+        <div class="match">Team K<br>vs<br>Team L</div>
+        <div class="match">Team M<br>vs<br>Team N</div>
+        <div class="match">Team O<br>vs<br>Team P</div>
+      </div>
+      <div class="round quarterfinal">
+        <div class="match">Winner 5<br>vs<br>Winner 6</div>
+        <div class="match">Winner 7<br>vs<br>Winner 8</div>
+      </div>
+      <div class="round semifinal">
+        <div class="match">Winner QF3<br>vs<br>Winner QF4</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Team data from main system
+    const teamData = {
+      1: "Logistika", 2: "Elit İçkilər", 3: "Bizon Enerji", 4: "Tamstore Satış", 
+      5: "Maliyyə 1", 6: "İstehsalat", 7: "Təhlükəsizlik", 8: "SPL"
+    };
+
+    // Load tournament results from localStorage if available
+    function loadTournamentResults() {
+      try {
+        const savedResults = localStorage.getItem('avrora-tournament-results');
+        if (savedResults) {
+          const results = JSON.parse(savedResults);
+          updateBracketWithResults(results);
+        }
+      } catch (e) {
+        console.warn('Failed to load tournament results', e);
+      }
+    }
+
+    // Update bracket with actual results
+    function updateBracketWithResults(results) {
+      // This would update the bracket with real match results
+      console.log('Updating bracket with results:', results);
+    }
+
+    // Generate new random bracket
+    function generateBracket() {
+      // Shuffle teams and create new bracket
+      const teams = Object.values(teamData);
+      const shuffled = teams.sort(() => Math.random() - 0.5);
+      
+      // Update the bracket with new teams
+      const matches = document.querySelectorAll('.match');
+      let teamIndex = 0;
+      
+      matches.forEach(match => {
+        const teamNames = match.querySelectorAll('.name');
+        teamNames.forEach(teamName => {
+          if (teamIndex < shuffled.length) {
+            teamName.textContent = shuffled[teamIndex];
+            teamIndex++;
+          }
+        });
+      });
+      
+      // Add animation
+      matches.forEach((match, index) => {
+        setTimeout(() => {
+          match.style.opacity = '0';
+          match.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            match.style.opacity = '1';
+            match.style.transform = 'translateY(0)';
+            match.style.transition = 'all 0.5s ease';
+          }, 100);
+        }, index * 100);
+      });
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadTournamentResults();
+      
+      // Add click handlers for team selection
+      const teams = document.querySelectorAll('.team');
+      teams.forEach(team => {
+        team.addEventListener('click', function() {
+          this.style.background = 'linear-gradient(135deg, #36404e, #232c36)';
+          this.style.transform = 'scale(1.02)';
+          
+          setTimeout(() => {
+            this.style.transform = 'scale(1)';
+          }, 200);
+        });
+      });
+    });
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tournament Bracket</title>
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #001233, #000814 80%);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  color: #00eaff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.bracket-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  min-height: 90vh;
+  position: relative;
+}
+
+.bracket-side {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  position: relative;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+  position: relative;
+}
+
+.match {
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 195, 255, 0.3);
+  border-radius: 14px;
+  width: 200px;
+  padding: 14px 8px;
+  text-align: center;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.match:hover {
+  transform: scale(1.05);
+  border-color: #00eaff;
+  box-shadow: 0 0 15px #00eaff80;
+}
+
+/* Connector lines */
+.round:not(:last-child) .match::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  width: 30px;
+  height: 2px;
+  background: #00bfff50;
+}
+
+.bracket-side.right .round:not(:last-child) .match::after {
+  left: -30px;
+  right: auto;
+}
+
+/* Vertical lines for joining */
+.round:nth-child(1) .match:nth-child(odd)::before {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  width: 2px;
+  height: 105px;
+  background: #00bfff50;
+}
+
+.bracket-side.right .round:nth-child(1) .match:nth-child(odd)::before {
+  left: -30px;
+  right: auto;
+}
+
+/* Center trophy */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center .trophy {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 12px #00eaff);
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); filter: drop-shadow(0 0 12px #00eaff); }
+  to { transform: scale(1.05); filter: drop-shadow(0 0 24px #00eaff); }
+}
+</style>
+</head>
+<body>
+
+<h2>AVRORA QRUP · IV FUTBOL ÇEMPİONATI</h2>
+
+<div class="bracket-wrapper">
+  <div class="bracket-side left">
+    <div class="round round-16">
+      <div class="match">17 ⚽ 18</div>
+      <div class="match">15 ⚽ 16</div>
+      <div class="match">23 ⚽ 24</div>
+      <div class="match">9 ⚽ 10</div>
+    </div>
+    <div class="round quarterfinal">
+      <div class="match">R16 - 1 ⚽ 2</div>
+      <div class="match">R16 - 7 ⚽ 8</div>
+    </div>
+    <div class="round semifinal">
+      <div class="match">QF1 ⚽ QF2</div>
+    </div>
+  </div>
+
+  <div class="center">
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/UEFA_Champions_League_trophy.png" alt="Trophy" class="trophy">
+  </div>
+
+  <div class="bracket-side right">
+    <div class="round round-16">
+      <div class="match">18 ⚽ 17</div>
+      <div class="match">16 ⚽ 15</div>
+      <div class="match">24 ⚽ 23</div>
+      <div class="match">10 ⚽ 9</div>
+    </div>
+    <div class="round quarterfinal">
+      <div class="match">R16 - 2 ⚽ 1</div>
+      <div class="match">R16 - 8 ⚽ 7</div>
+    </div>
+    <div class="round semifinal">
+      <div class="match">QF3 ⚽ QF4</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html> -->
